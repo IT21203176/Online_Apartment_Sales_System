@@ -1,0 +1,291 @@
+@charset "utf-8";
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header wrapper{
+    width: 1400px;
+    margin: auto;
+}
+
+.nav-area{
+    float: left;
+    list-style: none;
+    margin-top: 50px;
+    padding-right: 1-px;
+}
+
+.header li{
+    display: inline-block;
+
+}
+
+.header li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 120px 20px;
+    font-size: 15px;
+}
+
+.header li a{
+    background: none;
+    color: rgb(255, 255, 255);
+    word-spacing: 25px;
+}
+
+.logo img{
+    width: 140px;
+    height: 140px;
+    float: left;
+    padding-left: 0%;
+    padding-top: 0%;
+    filter: invert(0);
+}
+
+.form-inline{
+    background: none;
+    float: right;
+    margin-top: 38px;
+    padding-right: 10%;
+    padding: 5px 65px;
+}
+
+.form-inline a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.mbar {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 110px;
+    right: 430px;
+    
+  }
+  
+  .header .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(253, 253, 254);
+    margin: 6px 0;
+    margin-top: 90px 0px 0px;
+  }
+
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  footer{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #021430;
+    height: auto;
+  }
+
+  .footer > *{
+    flex: 1 100%;
+  }
+
+  .footer-left{
+    margin-right:  1.25em;
+    margin-bottom: 2em;
+  }
+
+  .footer-left img{
+    width: 30%;
+  }
+
+  h2{
+    font-weight: 800;
+    font-size: 17px;
+  }
+
+  .footer ul{
+    list-style: none;
+    padding-left: 0%;
+  }
+
+  .footer li{
+    line-height: 1.9em;
+  }
+
+  .footer a{
+    text-decoration: none;
+  }
+
+  .footer-right{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+  }
+
+  .footer-right > *{
+    flex: 1 50%;
+    margin-right: 2.00em;
+  }
+
+  .box a{
+    color: rgb(249, 244, 244);
+    font-size: 14px;
+  }
+
+  .footer-bottom{
+    text-align: center;
+    color: rgb(250, 246, 246);
+    padding-top: 50px;
+    font-size: 13px;
+  }
+
+  .footer-bottom p{
+    font-size: 13px;
+    color: #e7f2f4;
+  }
+
+  .footer-bottom a{
+    font-size: 13px;
+    color: #e7f2f4;
+  }
+
+  .footer-left p{
+    padding-right: 20%;
+    color: #999;
+    position: center;
+  }
+
+  .socials a{
+    background: none;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .socials a i{
+    color: #e7f2f4;
+    padding: 0px 1px;
+    font-size: 30px;
+  }
+
+  @media screen and (min-width:600px) {
+    .footer-right > *{
+      flex: 1;
+    }
+    .footer-left{
+      flex: 1 0px;
+    }
+    .footer-right{
+      flex:2 0px
+    }
+  } 
+
+  @media (max-width: 600px) {
+    .footer{
+      padding: 15px;
+    }
+    
+  }
+
+  .header {
+    padding: 15px 0px 68px 0px;
+    height: 90px;
+    text-align: center;
+    background: #010317;
+ }
+
+  
+
+.wrapper h3{
+    font-size: 38px;
+    color: #818181;
+    padding: 10px 140px 0px 0px;
+}
+
+.news img{
+  width: 940px;
+  height: 510px;
+  padding: 30px 120px 20px 70px;
+  position: absolute;
+  top: 120px;
+  left: 210px;
+}
+
+.news h5{
+  font-size: 40px;
+  font-weight:bolder;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  top: 40px;
+  left: 470px;
+}
+
+.news h3{
+  font-size: 20px;
+  font-weight:bold;
+  position: absolute;
+  top: 100px;
+  left: 630px;
+  padding: 1px 120px 20px 20px;
+}

@@ -1,0 +1,848 @@
+@charset "utf-8";
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header wrapper{
+    width: 1400px;
+    margin: auto;
+}
+
+.nav-area{
+    float: left;
+    list-style: none;
+    margin-top: 50px;
+    padding-right: 1-px;
+}
+
+.header li{
+    display: inline-block;
+
+}
+
+.header li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 120px 20px;
+    font-size: 15px;
+}
+
+.header li a{
+    background: none;
+    color: rgb(255, 255, 255);
+    word-spacing: 25px;
+}
+
+.logo img{
+    width: 140px;
+    height: 140px;
+    float: left;
+    padding-left: 0%;
+    padding-top: 0%;
+    filter: invert(0);
+}
+
+.form-inline{
+    background: none;
+    float: right;
+    margin-top: 38px;
+    padding-right: 10%;
+    padding: 5px 65px;
+}
+
+.form-inline a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.mbar {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 110px;
+    right: 430px;
+    
+  }
+  
+  .header .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(253, 253, 254);
+    margin: 6px 0;
+    margin-top: 90px 0px 0px;
+  }
+
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  footer{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #021430;
+    height: auto;
+  }
+
+  .footer > *{
+    flex: 1 100%;
+  }
+
+  .footer-left{
+    margin-right:  1.25em;
+    margin-bottom: 2em;
+  }
+
+  .footer-left img{
+    width: 30%;
+  }
+
+  h2{
+    font-weight: 800;
+    font-size: 17px;
+  }
+
+  .footer ul{
+    list-style: none;
+    padding-left: 0%;
+  }
+
+  .footer li{
+    line-height: 1.9em;
+  }
+
+  .footer a{
+    text-decoration: none;
+  }
+
+  .footer-right{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+  }
+
+  .footer-right > *{
+    flex: 1 50%;
+    margin-right: 2.00em;
+  }
+
+  .box a{
+    color: rgb(249, 244, 244);
+    font-size: 14px;
+  }
+
+  .footer-bottom{
+    text-align: center;
+    color: rgb(250, 246, 246);
+    padding-top: 50px;
+    font-size: 13px;
+  }
+
+  .footer-bottom p{
+    font-size: 13px;
+    color: #e7f2f4;
+  }
+
+  .footer-bottom a{
+    font-size: 13px;
+    color: #e7f2f4;
+  }
+
+  .footer-left p{
+    padding-right: 20%;
+    color: #999;
+    position: center;
+  }
+
+  .socials a{
+    background: none;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .socials a i{
+    color: #e7f2f4;
+    padding: 0px 1px;
+    font-size: 30px;
+  }
+
+  @media screen and (min-width:600px) {
+    .footer-right > *{
+      flex: 1;
+    }
+    .footer-left{
+      flex: 1 0px;
+    }
+    .footer-right{
+      flex:2 0px
+    }
+  } 
+
+  @media (max-width: 600px) {
+    .footer{
+      padding: 15px;
+    }
+    
+  }
+
+  .header {
+    padding: 15px 0px 68px 0px;
+    height: 90px;
+    text-align: center;
+    background: #010317;
+ }
+
+  
+
+.wrapper h3{
+    font-size: 38px;
+    color: #818181;
+    padding: 10px 140px 0px 0px;
+}
+
+
+.content h5{
+    font-size: 90px;
+    word-spacing: 100px;
+    color: #939595;
+    font-weight: 100;
+    position: absolute;
+    top: 190px;
+  }
+
+  .button {
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .effect{
+    position: absolute;
+    top: 10px;
+   
+  }
+
+  .effect .effect-img img{
+    transition: all 3s;
+  }
+
+  .effect:hover .effect-img img{
+    transform: scale(1.1) ;
+  }
+
+  .effect .effect-btn .btn{
+    display: inline-block;
+    color: #fff4f4;
+    background-color: rgb(43, 38, 38);
+    width: 120px;
+    height: 22px;
+    text-align: center;
+  }
+
+  .section-title::after{
+    position: absolute;
+    content: "";
+
+  }
+
+  .effect .effect-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+  }
+
+  .effect .effect-text .inner{
+    z-index: 1;
+  }
+
+  .effect .effect-text::before,
+  .effect .effect-text::after{
+    display: block;
+    content: '';
+  }
+
+  .effect:hover .effect-text{
+    opacity: 1;
+  }
+
+  .effect1 .effect-img1 img{
+    transition: all 3s;
+  }
+
+  .effect1:hover .effect-img1 img{
+    transform: scale(1.1) ;
+  }
+
+  .effect1 .effect-btn1 .btn1{
+    display: inline-block;
+    color: #fff4f4;
+    background-color: rgb(43, 38, 38);
+    width: 120px;
+    height: 22px;
+    text-align: center;
+  }
+
+  .section-title1::after{
+    position: absolute;
+    content: "";
+
+  }
+
+  .effect1 .effect-text1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+  }
+
+  .effect1 .effect-text1 .inner1{
+    z-index: 1;
+  }
+
+  .effect1 .effect-text1::before,
+  .effect1 .effect-text1::after{
+    display: block;
+    content: '';
+  }
+
+  .effect1:hover .effect-text1{
+    opacity: 1;
+  }
+
+  .effect2 .effect-img2 img{
+    transition: all 3s;
+  }
+
+  .effect2:hover .effect-img2 img{
+    transform: scale(1.1) ;
+  }
+
+  .effect2 .effect-btn2 .btn2{
+    display: inline-block;
+    color: #fff4f4;
+    background-color: rgb(43, 38, 38);
+    width: 120px;
+    height: 22px;
+    text-align: center;
+  }
+
+  .section-title2::after{
+    position: absolute;
+    content: "";
+
+  }
+
+  .effect2 .effect-text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+  }
+
+  .effect2 .effect-text2 .inner2{
+    z-index: 1;
+  }
+
+  .effect2 .effect-text2::before,
+  .effect2 .effect-text2::after{
+    display: block;
+    content: '';
+  }
+
+  .effect2:hover .effect-text2{
+    opacity: 1;
+  }
+
+  .effect2 .effect-img2 img{
+    transition: all 3s;
+  }
+
+  .effect2:hover .effect-img2 img{
+    transform: scale(1.1) ;
+  }
+
+  .effect2 .effect-btn2 .btn2{
+    display: inline-block;
+    color: #fff4f4;
+    background-color: rgb(43, 38, 38);
+    width: 120px;
+    height: 22px;
+    text-align: center;
+  }
+
+  .section-title2::after{
+    position: absolute;
+    content: "";
+
+  }
+
+  .effect3 .effect-text3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+  }
+
+  .effect3 .effect-text3 .inner3{
+    z-index: 1;
+  }
+
+  .effect3 .effect-text3::before,
+  .effect3 .effect-text3::after{
+    display: block;
+    content: '';
+  }
+
+  .effect3:hover .effect-text3{
+    opacity: 1;
+  }
+
+  .effect3 .effect-img3 img{
+    transition: all 3s;
+  }
+
+  .effect3:hover .effect-img3 img{
+    transform: scale(1.1) ;
+  }
+
+  .effect3 .effect-btn3 .btn3{
+    display: inline-block;
+    color: #fff4f4;
+    background-color: rgb(43, 38, 38);
+    width: 120px;
+    height: 22px;
+    text-align: center;
+  }
+
+  .section-title3::after{
+    position: absolute;
+    content: "";
+
+  }
+
+  .effect4 .effect-img4 img{
+    transition: all 3s;
+  }
+
+  .effect4:hover .effect-img4 img{
+    transform: scale(1.1) ;
+  }
+
+  .effect4 .effect-btn4 .btn4{
+    display: inline-block;
+    color: #fff4f4;
+    background-color: rgb(43, 38, 38);
+    width: 120px;
+    height: 22px;
+    text-align: center;
+  }
+
+  .section-title4::after{
+    position: absolute;
+    content: "";
+
+  }
+
+  .effect4 .effect-text4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+  }
+
+  .effect4 .effect-text4 .inner4{
+    z-index: 1;
+  }
+
+  .effect4 .effect-text4::before,
+  .effect4 .effect-text4::after{
+    display: block;
+    content: '';
+  }
+
+  .effect4:hover .effect-text4{
+    opacity: 1;
+  }
+
+  .effect4 .effect-img4 img{
+    transition: all 3s;
+  }
+
+  .effect4:hover .effect-img4 img{
+    transform: scale(1.1) ;
+  }
+
+  .effect4 .effect-btn4 .btn4{
+    display: inline-block;
+    color: #fff4f4;
+    background-color: rgb(43, 38, 38);
+    width: 120px;
+    height: 22px;
+    text-align: center;
+  }
+
+  .section-title4::after{
+    position: absolute;
+    content: "";
+
+  }
+
+  .btn-group button {
+    background-color: #5b5e60; /* Green background */
+    border: 1px solid  #5b5e60; /* Green border */
+    color: rgb(251, 251, 251); /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-weight: bold;
+    position: relative;
+    top: 140px;
+    left: 270px;
+    height: 45px;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #041d32;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5:hover {
+    background-color: #010c29;
+    color: white;
+  }
+
+  .but {
+    background-color: #0f110f; /* Green */
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 250px;
+    position: absolute;
+    
+    right: 350px;
+  }
+
+  .button5a {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5a:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button5b {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5b:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button5c {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5c:hover {
+    background-color: #555555;
+    color: white;
+  }
+  
+  .button4ac {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button4ac:hover {
+    background-color: #555555;
+    color: white;
+  }
+  
+  .button4cc {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button4cc:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button4dc {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button4dc:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button4ba {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button4ba:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button4ca {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button4ca:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button4da {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button4da:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button3a {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button3a:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button3b {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button3b:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button3d {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button3d:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button2a {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button2a:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button2c {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button2c:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button2d {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button2d:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 1400px;
+    position: absolute;
+    top: 320px;
+    left: 40px;
+    right: 20px;
+  }
+  
+  td, th {
+    border: .1px solid #504e4e;
+    text-align: left;
+    padding: 25px;
+ 
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+ 
+  
+  
